@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Merriweather:wght@300&family=Montserrat:wght@100&family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">    <title></title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header"></div>
+        <div class="main">
+
+            <div class="main-left">
+                <div class="left-1">
+                    Bill
+                    <input dir="rtl" class="input-left" type="text" id="input1" oninput="colors()">
+                </div>
+
+            <div class="left-2">
+                <p>Select Tip %</p>
+                <div class="tip-boxes">
+
+                    <button class="tipBox" id="t1" onclick="discounts()" >5%</button>
+                    <button class="tipBox" id="t2" onclick="discounts()">10%</button>
+                    <button class="tipBox" id="t3" onclick="discounts()">15%</button>
+                    <button class="tipBox" id="t4" onclick="discounts()">20%</button>
+                    <button class="tipBox" id="t5" onclick="discounts()">25%</button>
+                    <input class="tipBox1" dir="rtl" type="text" placeholder="Custom" id="t6" oninput="discounts()">
+
+                </div>
+            </div>
+
+            <div class="left-1">
+                Number of People
+                <input dir="rtl" class="input-left" id="input2" type="text" oninput="colors()">
+            </div>
+
+
+            </div>
+
+        <div class="main-right">
+
+          <div class="right-top">
+
+            <div class="right-top-1">
+
+                <div class="label">
+                    Tip Amount
+                    <br> <small>/ person</small>
+                </div>
+                <div class="right-top-1-show" id="show1">$0.00</div>
+            </div>
+
+            <div class="right-top-1">
+
+                 <div class="label">
+                   Total
+                    <br><small>/ person</small>
+                </div>
+                <div class="right-top-1-show" id="show2">$0.00</div>
+            </div>
+
+          </div>
+
+            <button id="reset" onclick="reset()">RESET</button>
+
+        </div>
+
+        </div>
+        </div>
+
+
+<script src="main.js" >
+
+</script>
+</body>
+</html>
